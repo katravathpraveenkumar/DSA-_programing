@@ -11,7 +11,7 @@ public class problem2 {
 
     static Node head;
 
-    public static boolean isCycle(Node head) {
+    public  static boolean isCycle(Node head) {
         Node slow = head;
         Node fast = head;
         while (fast != null && fast.next != null) {
