@@ -22,11 +22,24 @@ public class stack{
         push(2);
         push(3);
         while(!isEmpty()){
-            System.out.print(peek());
+            System.out.println(peek());
             pop();
 
         }
     }
 
 
+}
+// SIMPLE STACK IMPLEMANTATION
+public class STACK{
+    public static void main(String[]args){
+        Stack<Integer>s=new Stack<>();
+        s.push(2);
+        s.push(3);
+        s.push(4);
+        while(!isEmpty()){
+            System.out.println(s.peek());
+            s.pop();
+        }
+    }
 }
