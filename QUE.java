@@ -14,6 +14,7 @@ public class QUE {
         public boolean isEmpty(){
             return front == -1 && rear == -1;
         }
+        //add operation
         public void add(int data){
             if((rear + 1) % size == front){
                 System.out.println("Queue is full");
@@ -28,6 +29,7 @@ public class QUE {
             rear = (rear + 1) % size;
             arr[rear] = data;
         }
+        //remove operation
         public int remove(){
             if(isEmpty()){
                 System.out.println("Queue is empty");
@@ -42,6 +44,7 @@ public class QUE {
             }
             return removed;
         }
+        //peek operation
         public int peek(){
             if(isEmpty()){
                 System.out.println("Queue is empty");
